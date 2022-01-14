@@ -4,31 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E8F469"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnNate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="홈페이지 열기" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#E9FF0F"
+        android:text="@string/btn1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn911"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="전화걸기" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#75CEF6"
+        android:text="@string/btn2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnGal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="갤러리 열기" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        android:text="@string/btn3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnEnd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="끝내기" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#A67BF3"
+        android:text="@string/btn4"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

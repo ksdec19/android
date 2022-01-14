@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.appicon);
+
 
         buttons[0] = (Button) findViewById(R.id.btnNate);
         buttons[1] = (Button) findViewById(R.id.btn911);
@@ -32,21 +35,24 @@ public class MainActivity extends AppCompatActivity {
         buttons[1].setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:/010-5123-8775"));
+                startActivity(intent);
             }
         });
         buttons[2].setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://media/internal/images/media"));
+                startActivity(intent);
             }
         });
         buttons[3].setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
+                finish();
             }
         });
+
 
 
 
