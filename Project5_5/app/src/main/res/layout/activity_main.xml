@@ -7,6 +7,7 @@
     android:layout_margin="5dp"
     android:columnCount="5"
     android:orientation="horizontal"
+    android:padding="5dp"
     android:rowCount="9"
 
     tools:context=".MainActivity">
